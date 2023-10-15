@@ -2,7 +2,9 @@ import mongoose from "mongoose";
 
 export const connection = () => {
   mongoose
-    .connect("mongodb://127.0.0.1:27017/sarahahDB")
+    .connect(
+      "mongodb+srv://sarahaaApp:sarahaaApp@cluster0.c4t5fu8.mongodb.net/"
+    )
     .then(() => {
       console.log("DB connected");
     })
